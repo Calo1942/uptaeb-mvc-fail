@@ -24,11 +24,8 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- Vendor CSS -->
-  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <!-- Links Estilos -->
+    <?php echo $varHeader; ?>
 
   <!-- Fix for custom scrollbar if JS is disabled-->
   <noscript>
@@ -317,13 +314,10 @@
     </section>
     <!-- / Main Section-->
 
+    <!-- Theme JS -->
+    <!-- Custom JS -->
+    <?php echo $varJs; ?>
 
-    <!-- Theme JS -->
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
 </body>
 
 </html>

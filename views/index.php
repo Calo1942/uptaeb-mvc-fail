@@ -18,8 +18,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <!-- Links Estilos -->
+    <?php echo $varHeader; ?>
 
     <noscript>
         <style>
@@ -661,7 +661,8 @@
         </div>
     </footer> <script src="./assets/js/vendor.bundle.js"></script>
 
-    <script src="./assets/js/theme.bundle.js"></script>
+    <!-- Custom JS -->
+    <?php echo $varJs; ?>
 </body>
 
 </html>

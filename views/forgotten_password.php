@@ -24,11 +24,8 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- Vendor CSS -->
-  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <!-- Links Estilos -->
+    <?php echo $varHeader; ?>
 
   <!-- Fix for custom scrollbar if JS is disabled-->
   <noscript>
@@ -63,30 +60,15 @@
             </a>
             <!-- / Logo-->
             <div class="shadow-xl p-4 p-lg-5 bg-white">
-                <h1 class="text-center mb-5 fs-2 fw-bold">Abrir Cuenta</h1>
-                <a href="#" class="btn btn-facebook d-block mb-2"><i class="ri-facebook-circle-fill align-bottom"></i> Iniciar sesión con Facebook</a>
-                <a href="#" class="btn btn-twitter d-block mb-2"><i class="ri-twitter-fill align-bottom"></i> Iniciar sesión con Twitter</a>
-                <span class="text-muted text-center d-block fw-bolder my-4">O</span>
+                <h1 class="text-center fs-2 mb-5 fw-bold">Contraseña Olvidada</h1>
+                <p class="text-muted">Por favor ingresa tu correo electrónico a continuación y te enviaremos un enlace seguro para restablecer tu contraseña.</p>
                 <form>
                     <div class="form-group">
-                      <label class="form-label" for="register-fname">Nombre</label>
-                      <input type="text" class="form-control" id="register-fname" placeholder="Introduce tu nombre">
+                      <label for="forgot-password" class="form-label">Correo Electrónico</label>
+                      <input type="email" class="form-control" id="forgot-password" placeholder="name@email.com">
                     </div>
-                    <div class="form-group">
-                      <label class="form-label" for="register-lname">Apellido</label>
-                      <input type="text" class="form-control" id="register-lname" placeholder="Introduce tu apellido">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="register-email">Correo Electrónico</label>
-                      <input type="email" class="form-control" id="register-email" placeholder="name@email.com">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="register-password">Contraseña</label>
-                      <input type="password" class="form-control" id="register-password" placeholder="Introduce tu contraseña">
-                    </div>
-                    <button type="submit" class="btn btn-dark d-block w-100 my-4">Regístrate</button>
-                  </form>
-                  <p class="d-block text-center text-muted">¿Ya estás registrado? <a class="text-muted" href="./login.php">Inicia sesión aquí.</a></p>
+                    <button type="submit" class="btn btn-dark d-block w-100 my-4">Enviar Enlace de Restablecimiento</button>
+                </form>
             </div>
 
         </div>
@@ -98,11 +80,9 @@
 
 
     <!-- Theme JS -->
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+     
+    <!-- Custom JS -->
+    <?php echo $varJs; ?>
 </body>
 
 </html>
