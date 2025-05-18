@@ -7,17 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Heli, Anye, Enye, Calo">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
-        rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
-    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
     <!-- Links Estilos -->
     <?php echo $varHeader; ?>
 
@@ -29,7 +18,7 @@
         </style>
     </noscript>
 
-    <title>BRUZ Deportess</title>
+    <title>BRUZ Deporte</title>
 
 </head>
 
@@ -40,7 +29,7 @@
             <div class="w-100">
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
 
-                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./index.php">
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./?url=index">
                         <div class="d-flex align-items-center">
                             <svg class="f-w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.53 72.26">
                                 <path d="M10.43,54.2h0L0,36.13,10.43,18.06,20.86,0H41.72L10.43,54.2Zm67.1-7.83L73,54.2,68.49,62,45,48.47,31.29,72.26H20.86l-5.22-9L52.15,0H62.58l5.21,9L54.06,32.82,77.53,46.37Z"
@@ -73,7 +62,7 @@
                             <div class="search-overlay"></div>
                             </li>
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="./login.php">
+                            <a class="nav-link text-body" href="./?url=login">
                                 Cuenta
                             </a>
                         </li>
@@ -138,8 +127,8 @@
                                             <p class="m-0 fs-5 fw-bold">$422.99</p>
                                         </div>
                                     </div>
-                                    <a href="./cart.php" class="btn btn-outline-dark w-100 text-center mt-4" role="button">Ver Carrito</a>
-                                    <a href="./checkout.php" class="btn btn-dark w-100 text-center mt-2" role="button">Proceder al Pago</a>
+                                    <a href="./?url=cart" class="btn btn-outline-dark w-100 text-center mt-4" role="button">Ver Carrito</a>
+                                    <a href="./?url=checkout" class="btn btn-dark w-100 text-center mt-2" role="button">Proceder al Pago</a>
                                 </div>
                                 </div>
                             </li>
@@ -149,7 +138,7 @@
 
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="./category.php" role="button">
+                                <a class="nav-link" href="./?url=category" role="button">
                                     Oferta
                                 </a>
                             </li>
@@ -159,14 +148,14 @@
                                     Páginas
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./index.php">Página de inicio</a></li>
-                                    <li><a class="dropdown-item" href="./category.php">Categoría</a></li>
-                                    <li><a class="dropdown-item" href="./product.php">Producto</a></li>
-                                    <li><a class="dropdown-item" href="./cart.php">Carrito</a></li>
-                                    <li><a class="dropdown-item" href="./checkout.php">Pago</a></li>
-                                    <li><a class="dropdown-item" href="./login.php">Iniciar sesión</a></li>
-                                    <li><a class="dropdown-item" href="./register.php">Registrarse</a></li>
-                                    <li><a class="dropdown-item" href="./forgotten-password.php">Contraseña olvidada</a></li>
+                                    <li><a class="dropdown-item" href="./?url=index">Página de inicio</a></li>
+                                    <li><a class="dropdown-item" href="./?url=category">Categoría</a></li>
+                                    <li><a class="dropdown-item" href="./?url=product">Producto</a></li>
+                                    <li><a class="dropdown-item" href="./?url=cart">Carrito</a></li>
+                                    <li><a class="dropdown-item" href="./?url=checkout">Pago</a></li>
+                                    <li><a class="dropdown-item" href="./?url=login">Iniciar sesión</a></li>
+                                    <li><a class="dropdown-item" href="./?url=register">Registrarse</a></li>
+                                    <li><a class="dropdown-item" href="./?url=forgotten_password">Contraseña olvidada</a></li>
                                 </ul>
                             </li>
                         </ul> 
@@ -215,7 +204,7 @@
                                 <span class="text-outline-light">Verano</span> Esenciales
                             </h2>
                             <div data-swiper-parallax-y="-25">
-                                <a href="./category.php" class="btn btn-psuedo text-white" role="button">Comprar Novedades</a>
+                                <a href="./?url=category" class="btn btn-psuedo text-white" role="button">Comprar Novedades</a>
                             </div>
                         </div>
                     </div>
@@ -234,7 +223,7 @@
                                 Adidas <span class="text-outline-light">SS21</span>
                             </h2>
                             <div data-swiper-parallax-y="-25">
-                                <a href="./category.php" class="btn btn-psuedo text-white" role="button">Comprar lo último de Adidas</a>
+                                <a href="./?url=category" class="btn btn-psuedo text-white" role="button">Comprar lo último de Adidas</a>
                             </div>
                         </div>
                     </div>
@@ -253,7 +242,7 @@
                                 Nike <span class="text-outline-light">SS21</span>
                             </h2>
                             <div data-swiper-parallax-y="-25">
-                                <a href="./category.php" class="btn btn-psuedo text-white" role="button">Comprar lo último de Nike</a>
+                                <a href="./?url=category" class="btn btn-psuedo text-white" role="button">Comprar lo último de Nike</a>
                             </div>
                         </div>
                     </div>
@@ -272,7 +261,7 @@
                                 <span class="text-outline-light">Moda</span> Sostenible
                             </h2>
                             <div data-swiper-parallax-y="-25">
-                                <a href="./category.php" class="btn btn-psuedo text-white" role="button">Por qué somos diferentes</a>
+                                <a href="./?url=category" class="btn btn-psuedo text-white" role="button">Por qué somos diferentes</a>
                             </div>
                         </div>
                     </div>
@@ -327,7 +316,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Imprescindibles</p>
                                 <h4 class="lead fw-bold">Esenciales Premium</h4>
-                                <a href="./category.php" class="btn btn-psuedo align-self-start">Comprar ahora</a>
+                                <a href="./?url=category" class="btn btn-psuedo align-self-start">Comprar ahora</a>
                             </div>
                         </div>
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -338,7 +327,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Selección curada</p>
                                 <h4 class="lead fw-bold">Nuestros Favoritos</h4>
-                                <a href="./category.php" class="btn btn-psuedo align-self-start">Comprar ahora</a>
+                                <a href="./?url=category" class="btn btn-psuedo align-self-start">Comprar ahora</a>
                             </div>
                         </div>
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -349,7 +338,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Básicos de Streetwear</p>
                                 <h4 class="lead fw-bold">Camisetas y Camisas</h4>
-                                <a href="./category.php" class="btn btn-psuedo align-self-start">Comprar ahora</a>
+                                <a href="./?url=category" class="btn btn-psuedo align-self-start">Comprar ahora</a>
                             </div>
                         </div>
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -360,7 +349,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Impermeable y ligero</p>
                                 <h4 class="lead fw-bold">Chaquetas y Abrigos</h4>
-                                <a href="./category.php" class="btn btn-psuedo align-self-start">Comprar ahora</a>
+                                <a href="./?url=category" class="btn btn-psuedo align-self-start">Comprar ahora</a>
                             </div>
                         </div>
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -371,7 +360,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Mantente abrigado</p>
                                 <h4 class="lead fw-bold">Gorros y Beanies</h4>
-                                <a href="./category.php" class="btn btn-psuedo align-self-start">Comprar ahora</a>
+                                <a href="./?url=category" class="btn btn-psuedo align-self-start">Comprar ahora</a>
                             </div>
                         </div>
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -382,7 +371,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">20% Descuento</p>
                                 <h4 class="lead fw-bold">Rebajas de Verano</h4>
-                                <a href="./category.php" class="btn btn-psuedo align-self-start">Comprar ahora</a>
+                                <a href="./?url=category" class="btn btn-psuedo align-self-start">Comprar ahora</a>
                             </div>
                         </div>
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -393,7 +382,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Recién llegados</p>
                                 <h4 class="lead fw-bold">Últimas Zapatillas</h4>
-                                <a href="./category.php" class="btn btn-psuedo align-self-start">Comprar ahora</a>
+                                <a href="./?url=category" class="btn btn-psuedo align-self-start">Comprar ahora</a>
                             </div>
                         </div>
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -404,7 +393,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Accesorios</p>
                                 <h4 class="lead fw-bold">Bolsos y Mochilas</h4>
-                                <a href="./category.php" class="btn btn-psuedo align-self-start">Comprar ahora</a>
+                                <a href="./?url=category" class="btn btn-psuedo align-self-start">Comprar ahora</a>
                             </div>
                         </div>
                     </div>
@@ -438,11 +427,11 @@
                     <h3 class="display-3 fw-bold mb-5"><span class="text-outline-dark">Bruz Deportes</span> - especialistas en streetwear
                         y calzado</h3>
                     <p class="lead">Somos Bruz Deportes, un proveedor líder de marcas globales de streetwear, incluyendo nombres como <a
-                            href="./category.php">Stussy</a>, <a href="./category.php">Carhartt</a>, <a href="./category.php">Gramicci</a>,
-                        <a href="./category.php">Afends</a> y muchos más.</p>
+                            href="./?url=category">Stussy</a>, <a href="./?url=category">Carhartt</a>, <a href="./?url=category">Gramicci</a>,
+                        <a href="./?url=category">Afends</a> y muchos más.</p>
                     <p class="lead">Con envíos a todo el mundo y precios inmejorables, ahora es un gran momento para elegir algo de
                         nuestra gama.</p>
-                    <a href="./category.php" class="btn btn-psuedo" role="button">Comprar Novedades</a>
+                    <a href="./?url=category" class="btn btn-psuedo" role="button">Comprar Novedades</a>
                 </div>
                 <div class="col-12 col-md-6 position-relative z-index-20 pe-0" data-aos="fade-left">
                     <picture
@@ -476,7 +465,7 @@
                                 </h2>
                                 <p class="fs-5 fw-light text-white d-none d-md-block">¡Nuestra venta flash anual ya está aquí! Hazte
                                     con una ganga de las principales marcas de streetwear del mundo.</p>
-                                <a href="./category.php" class="btn btn-psuedo text-white" role="button">Comprar todos los artículos en oferta</a>
+                                <a href="./?url=category" class="btn btn-psuedo text-white" role="button">Comprar todos los artículos en oferta</a>
                             </div>
                         </div>
                     </div>
@@ -490,7 +479,7 @@
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">Las Jordan Delta 2</p>
-                                        <a href="./category.php" class="btn btn-psuedo text-white py-2" role="button">Comprar Zapatillas</a>
+                                        <a href="./?url=category" class="btn btn-psuedo text-white py-2" role="button">Comprar Zapatillas</a>
                                     </div>
                                 </div>
                             </div>
@@ -502,7 +491,7 @@
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">Últimas camisas de hombre</p>
-                                        <a href="./category.php" class="btn btn-psuedo text-white py-2" role="button">Comprar Novedades</a>
+                                        <a href="./?url=category" class="btn btn-psuedo text-white py-2" role="button">Comprar Novedades</a>
                                     </div>
                                 </div>
                             </div>
@@ -514,7 +503,7 @@
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">Camisetas KiiKii Osake</p>
-                                        <a href="./category.php" class="btn btn-psuedo text-white py-2" role="button">Comprar Camisetas</a>
+                                        <a href="./?url=category" class="btn btn-psuedo text-white py-2" role="button">Comprar Camisetas</a>
                                     </div>
                                 </div>
                             </div>
@@ -526,7 +515,7 @@
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">Pack de camisas de mujer</p>
-                                        <a href="./category.php" class="btn btn-psuedo text-white py-2" role="button">Comprar artículos en oferta</a>
+                                        <a href="./?url=category" class="btn btn-psuedo text-white py-2" role="button">Comprar artículos en oferta</a>
                                     </div>
                                 </div>
                             </div>

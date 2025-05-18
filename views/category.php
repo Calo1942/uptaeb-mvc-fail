@@ -11,19 +11,6 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
 
-  <!-- Custom Google Fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
-    rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
-  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-
     <!-- Links Estilos -->
     <?php echo $varHeader; ?>
 
@@ -52,7 +39,7 @@
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
     
                     <!-- Logo-->
-                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./index.php">
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./?url=index">
                         <div class="d-flex align-items-center">
                             <svg class="f-w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.53 72.26"><path d="M10.43,54.2h0L0,36.13,10.43,18.06,20.86,0H41.72L10.43,54.2Zm67.1-7.83L73,54.2,68.49,62,45,48.47,31.29,72.26H20.86l-5.22-9L52.15,0H62.58l5.21,9L54.06,32.82,77.53,46.37Z" fill="currentColor" fill-rule="evenodd"/></svg>
                         </div>
@@ -94,7 +81,7 @@
     
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="./login.php">
+                            <a class="nav-link text-body" href="./?url=login">
                                 Cuenta
                             </a>
                         </li>
@@ -168,8 +155,8 @@
                                             <p class="m-0 fs-5 fw-bold">$422.99</p>
                                         </div>
                                     </div>
-                                    <a href="./cart.php" class="btn btn-outline-dark w-100 text-center mt-4" role="button">Ver Carrito</a>
-                                    <a href="./checkout.php" class="btn btn-dark w-100 text-center mt-2" role="button">Proceder al Pago</a>
+                                    <a href="./?url=cart" class="btn btn-outline-dark w-100 text-center mt-4" role="button">Ver Carrito</a>
+                                    <a href="./?url=checkout" class="btn btn-dark w-100 text-center mt-2" role="button">Proceder al Pago</a>
                                 </div>
                                 <!-- / Cart Summary-->
                               </div>
@@ -188,7 +175,7 @@
                         <!-- Menu-->
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="./category.php" role="button">
+                                <a class="nav-link" href="./?url=category" role="button">
                                     Oferta
                                 </a>
                             </li>
@@ -198,14 +185,14 @@
                                     Páginas
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./index.php">Página de inicio</a></li>
-                                    <li><a class="dropdown-item" href="./category.php">Categoría</a></li>
-                                    <li><a class="dropdown-item" href="./product.php">Producto</a></li>
-                                    <li><a class="dropdown-item" href="./cart.php">Carrito</a></li>
-                                    <li><a class="dropdown-item" href="./checkout.php">Pago</a></li>
-                                    <li><a class="dropdown-item" href="./login.php">Iniciar sesión</a></li>
-                                    <li><a class="dropdown-item" href="./register.php">Registrarse</a></li>
-                                    <li><a class="dropdown-item" href="./forgotten-password.php">Contraseña olvidada</a></li>
+                                    <li><a class="dropdown-item" href="./?url=index">Página de inicio</a></li>
+                                    <li><a class="dropdown-item" href="./?url=category">Categoría</a></li>
+                                    <li><a class="dropdown-item" href="./?url=product">Producto</a></li>
+                                    <li><a class="dropdown-item" href="./?url=cart">Carrito</a></li>
+                                    <li><a class="dropdown-item" href="./?url=checkout">Pago</a></li>
+                                    <li><a class="dropdown-item" href="./?url=login">Iniciar sesión</a></li>
+                                    <li><a class="dropdown-item" href="./?url=register">Registrarse</a></li>
+                                    <li><a class="dropdown-item" href="./?url=forgotten_password">Contraseña olvidada</a></li>
                                 </ul>
                             </li>
                         </ul>                    <!-- / Menu-->
@@ -287,7 +274,7 @@
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.php">Nike Air VaporMax 2021</a>
+                                <a class="text-decoration-none link-cover" href="./?url=product">Nike Air VaporMax 2021</a>
                                 <small class="text-muted d-block">4 colores, 10 tallas</small>
                                         <p class="mt-2 mb-0 small"><s class="text-muted">$329.99</s> <span class="text-danger">$198.66</span></p>
                             </div>
@@ -310,7 +297,7 @@
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.php">Nike ZoomX Vaporfly</a>
+                                <a class="text-decoration-none link-cover" href="./?url=product">Nike ZoomX Vaporfly</a>
                                 <small class="text-muted d-block">2 colores, 4 tallas</small>
                                         <p class="mt-2 mb-0 small">$275.45</p>
                             </div>
@@ -330,7 +317,7 @@
                                 </picture>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.php">Nike Blazer Mid &#x27;77</a>
+                                <a class="text-decoration-none link-cover" href="./?url=product">Nike Blazer Mid &#x27;77</a>
                                 <small class="text-muted d-block">5 colores, 6 tallas</small>
                                     <p class="mt-2 mb-0 small text-muted">Sold Out</p>
                             </div>
@@ -352,7 +339,7 @@
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.php">Nike Air Force 1</a>
+                                <a class="text-decoration-none link-cover" href="./?url=product">Nike Air Force 1</a>
                                 <small class="text-muted d-block">6 colores, 9 tallas</small>
                                         <p class="mt-2 mb-0 small">$425.85</p>
                             </div>
@@ -375,7 +362,7 @@
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.php">Nike Air Max 90</a>
+                                <a class="text-decoration-none link-cover" href="./?url=product">Nike Air Max 90</a>
                                 <small class="text-muted d-block">4 colores, 10 tallas</small>
                                         <p class="mt-2 mb-0 small"><s class="text-muted">$196.99</s> <span class="text-danger">$98.66</span></p>
                             </div>
@@ -399,7 +386,7 @@
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.php">Nike Glide FlyEase</a>
+                                <a class="text-decoration-none link-cover" href="./?url=product">Nike Glide FlyEase</a>
                                 <small class="text-muted d-block">1 color</small>
                                         <p class="mt-2 mb-0 small"><s class="text-muted">$329.99</s> <span class="text-danger">$198.66</span></p>
                             </div>
@@ -421,7 +408,7 @@
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.php">Nike Zoom Freak</a>
+                                <a class="text-decoration-none link-cover" href="./?url=product">Nike Zoom Freak</a>
                                 <small class="text-muted d-block">2 colores, 2 tallas</small>
                                         <p class="mt-2 mb-0 small">$444.99</p>
                             </div>
@@ -444,7 +431,7 @@
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.php">Nike Air Pegasus</a>
+                                <a class="text-decoration-none link-cover" href="./?url=product">Nike Air Pegasus</a>
                                 <small class="text-muted d-block">3 colores, 10 tallas</small>
                                         <p class="mt-2 mb-0 small">$178.99</p>
                             </div>
@@ -467,7 +454,7 @@
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.php">Nike Air Jordans</a>
+                                <a class="text-decoration-none link-cover" href="./?url=product">Nike Air Jordans</a>
                                 <small class="text-muted d-block">3 colores, 10 tallas</small>
                                         <p class="mt-2 mb-0 small">$154.99</p>
                             </div>
