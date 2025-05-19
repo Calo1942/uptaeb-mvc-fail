@@ -54,9 +54,9 @@
                                 <li class="me-4"><a class="nav-link-checkout "
                                         href="./?url=checkout">Información</a></li>
                                 <li class="me-4"><a class="nav-link-checkout "
-                                        href="./?url=checkout-shipping">Envío</a></li>
+                                        href="./?url=checkout_shipping">Envío</a></li>
                                 <li><a class="nav-link-checkout nav-link-last "
-                                        href="./?url=checkout-payment">Pago</a></li>
+                                        href="./?url=checkout_payment">Pago</a></li>
                             </ul>
                         </nav>                        <div class="mt-5">
                             <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4">Tu Carrito</h3>

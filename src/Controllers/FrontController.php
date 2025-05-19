@@ -35,15 +35,15 @@ class FrontController {
                     call_user_func_array([$controller, $this->method], $this->params);
                 } else {
                     throw new \Exception("Método {$this->method} no encontrado en {$this->controller}");
-                    die("<script>window.location='?url=index';</script>");
+                    //die("<script>window.location='?url=index';</script>");
                 }
             } else {
                 throw new \Exception("Clase {$this->controller} no encontrada");
-                die("<script>window.location='?url=index';</script>");
+                //die("<script>window.location='?url=index';</script>");
             }
         } else {
             throw new \Exception("Controlador {$this->controller} no encontrado");
-            die("<script>window.location='?url=index';</script>");
+            //die("<script>window.location='?url=index';</script>");
         }
     }
 }
