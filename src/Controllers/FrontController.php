@@ -23,7 +23,7 @@ class FrontController {
     }
 
     public function run() {
-        $controllerFile = $this->basePath . 'controllers/' . $this->controller . '.php';
+        $controllerFile = $this->basePath . 'Controllers/' . $this->controller . '.php';
         
         if (file_exists($controllerFile)) {
             require_once $controllerFile;
