@@ -11,8 +11,8 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
   
-        <!-- Links Estilos -->
-        <?php include_once __DIR__ . '/../config/components/initComponent.php'; ?>
+    <!-- Links Estilos -->
+    <?php include_once __DIR__ . '/../config/components/initComponent.php'; ?>
     <?php echo $varHeader; ?>
 
   <!-- Fix for custom scrollbar if JS is disabled-->
@@ -52,20 +52,20 @@
                 <a href="#" class="btn btn-facebook d-block mb-2"><i class="ri-facebook-circle-fill align-bottom"></i> Iniciar sesión con Facebook</a>
                 <a href="#" class="btn btn-twitter d-block mb-2"><i class="ri-twitter-fill align-bottom"></i> Iniciar sesión con Twitter</a>
                 <span class="text-muted text-center d-block fw-bolder my-4">O</span>
-                <form>
-                    <div class="form-group">
+                <form action="?url=login/logear" method="POST">
+                  <div class="form-group">
                       <label class="form-label" for="login-email">Correo Electrónico</label>
-                      <input type="email" class="form-control" id="login-email" placeholder="name@email.com">
-                    </div>
-                    <div class="form-group">
+                      <input type="email" class="form-control" id="login-email" name="email" placeholder="name@email.com">
+                  </div>
+                  <div class="form-group">
                       <label for="login_password" class="form-label d-flex justify-content-between align-items-center">
-                        Contraseña
-                        <a href="./?url=forgotten_password" class="text-muted small">¿Olvidaste tu contraseña?</a>
+                          Contraseña
+                          <a href="./?url=forgotten_password" class="text-muted small">¿Olvidaste tu contraseña?</a>
                       </label>
-                      <input type="password" class="form-control" id="login-password" placeholder="Introduce tu contraseña">
-                    </div>
-                    <button type="submit" class="btn btn-dark d-block w-100 my-4">Iniciar Sesión</button>
-                </form>
+                      <input type="password" class="form-control" id="login-password" name="password" placeholder="Introduce tu contraseña">
+                  </div>
+                  <button type="submit" class="btn btn-dark d-block w-100 my-4">Iniciar Sesión</button>
+              </form>
                 <p class="d-block text-center text-muted">¿Eres nuevo cliente? <a class="text-muted" href="./?url=register">Regístrate para obtener una cuenta</a></p>
             </div>
 

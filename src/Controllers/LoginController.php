@@ -20,7 +20,12 @@ class LoginController {
         if (file_exists($viewPath)) {
             require_once($viewPath);
         } else {
+            //die("ERROR: Error en " . get_class($this) . " ");
             die("<script>window.location='?url=index';</script>");
         }
+    }
+
+    public function logear() {
+        die("MTF MVC");
     }
 }
