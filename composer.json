@@ -1,0 +1,13 @@
+{
+    "name": "bruz-deporte/uptaeb-mvc",
+    "description": "Proyecto MVC para UPTAEB",
+    "type": "project",
+    "require": {
+        "php": ">=8.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BruzDeporte\\UptaebMvc\\": "src/"
+        }
+    }
+}
