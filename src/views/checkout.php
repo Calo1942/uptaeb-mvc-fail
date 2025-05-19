@@ -12,6 +12,7 @@
   <meta name="keywords" content="">
 
     <!-- Links Estilos -->
+    <?php include_once __DIR__ . '/../config/components/initComponent.php'; ?>
     <?php echo $varHeader; ?>
 
   <!-- Fix for custom scrollbar if JS is disabled-->

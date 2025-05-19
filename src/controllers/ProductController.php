@@ -1,13 +1,26 @@
 <?php
 
-    if (file_exists("models/productModel.php")) {
-        require_once("models/productModel.php");
-    } else {
-        die("<script>window.location='?url=index';</script>");
+namespace BruzDeporte\UptaebMvc\Controllers;
+
+class ProductController {
+    private $basePath;
+
+    public function __construct() {
+        $this->basePath = __DIR__ . '/../';
     }
 
-    if (file_exists("views/product.php")) {
-        require_once("views/product.php");
-    } else {
-        die("<script>window.location='?url=product';</script>");
+    public function index() {
+        $modelPath = $this->basePath . 'models/productModel.php';
+        $viewPath = $this->basePath . 'views/product.php';
+
+        if (file_exists($modelPath)) {
+            require_once($modelPath);
+        }
+
+        if (file_exists($viewPath)) {
+            require_once($viewPath);
+        } else {
+            die("<script>window.location='?url=index';</script>");
+        }
     }
+}

@@ -1,13 +1,26 @@
 <?php
 
-    if (file_exists("models/registerModel.php")) {
-        require_once("models/registerModel.php");
-    } else {
-        die("<script>window.location='?url=index';</script>");
+namespace BruzDeporte\UptaebMvc\Controllers;
+
+class RegisterController {
+    private $basePath;
+
+    public function __construct() {
+        $this->basePath = __DIR__ . '/../';
     }
 
-    if (file_exists("views/register.php")) {
-        require_once("views/register.php");
-    } else {
-        die("<script>window.location='?url=register';</script>");
+    public function index() {
+        $modelPath = $this->basePath . 'models/registerModel.php';
+        $viewPath = $this->basePath . 'views/register.php';
+
+        if (file_exists($modelPath)) {
+            require_once($modelPath);
+        }
+
+        if (file_exists($viewPath)) {
+            require_once($viewPath);
+        } else {
+            die("<script>window.location='?url=index';</script>");
+        }
     }
+}

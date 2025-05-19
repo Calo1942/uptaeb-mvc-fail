@@ -1,13 +1,26 @@
 <?php
 
-    if (file_exists("models/loginModel.php")) {
-        require_once("models/loginModel.php");
-    } else {
-        die("<script>window.location='?url=index';</script>");
+namespace BruzDeporte\UptaebMvc\Controllers;
+
+class LoginController {
+    private $basePath;
+
+    public function __construct() {
+        $this->basePath = __DIR__ . '/../';
     }
 
-    if (file_exists("views/login.php")) {
-        require_once("views/login.php");
-    } else {
-        die("<script>window.location='?url=login';</script>");
+    public function index() {
+        $modelPath = $this->basePath . 'models/loginModel.php';
+        $viewPath = $this->basePath . 'views/login.php';
+
+        if (file_exists($modelPath)) {
+            require_once($modelPath);
+        }
+
+        if (file_exists($viewPath)) {
+            require_once($viewPath);
+        } else {
+            die("<script>window.location='?url=index';</script>");
+        }
     }
+}

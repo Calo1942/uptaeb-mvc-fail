@@ -1,13 +1,26 @@
 <?php
 
-    if (file_exists("models/checkoutModel.php")) {
-        require_once("models/checkoutModel.php");
-    } else {
-        die("<script>window.location='?url=index';</script>");
+namespace BruzDeporte\UptaebMvc\Controllers;
+
+class CheckoutController {
+    private $basePath;
+
+    public function __construct() {
+        $this->basePath = __DIR__ . '/../';
     }
 
-    if (file_exists("views/checkout.php")) {
-        require_once("views/checkout.php");
-    } else {
-        die("<script>window.location='?url=checkout';</script>");
+    public function index() {
+        $modelPath = $this->basePath . 'models/checkoutModel.php';
+        $viewPath = $this->basePath . 'views/checkout.php';
+
+        if (file_exists($modelPath)) {
+            require_once($modelPath);
+        }
+
+        if (file_exists($viewPath)) {
+            require_once($viewPath);
+        } else {
+            //die("<script>window.location='?url=index';</script>");
+        }
     }
+}

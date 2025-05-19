@@ -12,6 +12,7 @@
   <meta name="keywords" content="">
 
     <!-- Links Estilos -->
+    <?php include_once __DIR__ . '/../config/components/initComponent.php'; ?>
     <?php echo $varHeader; ?>
 
   <!-- Fix for custom scrollbar if JS is disabled-->
@@ -187,7 +188,7 @@
                             <!-- Cart Item-->
                             <div class="row mx-0 py-4 g-0 border-bottom">
                                 <div class="col-2 position-relative">
-                                        <span class="checkout-item-qty">3</span>
+
                                     <picture class="d-block border">
                                         <img class="img-fluid" src="./assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
@@ -206,7 +207,7 @@
                             <!-- Cart Item-->
                             <div class="row mx-0 py-4 g-0 border-bottom">
                                 <div class="col-2 position-relative">
-                                        <span class="checkout-item-qty">3</span>
+
                                     <picture class="d-block border">
                                         <img class="img-fluid" src="./assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>

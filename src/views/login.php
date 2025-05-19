@@ -11,7 +11,8 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
   
-    <!-- Links Estilos -->
+        <!-- Links Estilos -->
+        <?php include_once __DIR__ . '/../config/components/initComponent.php'; ?>
     <?php echo $varHeader; ?>
 
   <!-- Fix for custom scrollbar if JS is disabled-->

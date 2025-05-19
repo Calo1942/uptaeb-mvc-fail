@@ -7,9 +7,11 @@ class FrontController {
     private $controller;
     private $method;
     private $params;
+    private $basePath;
 
     public function __construct() {
         $this->url = $_REQUEST['url'] ?? 'index';
+        $this->basePath = __DIR__ . '/../';
         $this->parseUrl();
     }
 
@@ -21,17 +23,27 @@ class FrontController {
     }
 
     public function run() {
-        $controllerClass = "BruzDeporte\\UptaebMvc\\Controllers\\" . $this->controller;
+        $controllerFile = $this->basePath . 'controllers/' . $this->controller . '.php';
         
-        if (class_exists($controllerClass)) {
-            $controller = new $controllerClass();
-            if (method_exists($controller, $this->method)) {
-                call_user_func_array([$controller, $this->method], $this->params);
+        if (file_exists($controllerFile)) {
+            require_once $controllerFile;
+            $controllerClass = "BruzDeporte\\UptaebMvc\\Controllers\\" . $this->controller;
+            
+            if (class_exists($controllerClass)) {
+                $controller = new $controllerClass();
+                if (method_exists($controller, $this->method)) {
+                    call_user_func_array([$controller, $this->method], $this->params);
+                } else {
+                    throw new \Exception("Método {$this->method} no encontrado en {$this->controller}");
+                    die("<script>window.location='?url=index';</script>");
+                }
             } else {
-                throw new \Exception("Método {$this->method} no encontrado en {$this->controller}");
+                throw new \Exception("Clase {$this->controller} no encontrada");
+                die("<script>window.location='?url=index';</script>");
             }
         } else {
             throw new \Exception("Controlador {$this->controller} no encontrado");
+            die("<script>window.location='?url=index';</script>");
         }
     }
 }

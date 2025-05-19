@@ -8,6 +8,7 @@
     <meta name="author" content="Heli, Anye, Enye, Calo">
 
     <!-- Links Estilos -->
+    <?php include_once __DIR__ . '/../config/components/initComponent.php'; ?>
     <?php echo $varHeader; ?>
 
     <noscript>
@@ -82,7 +83,7 @@
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
                                             <picture class="d-block ">
-                                                <img class="img-fluid" src="./assets/images/products/product-cart-1.jpg"
+                                                <img class="img-fluid" src="./src/assets/images/products/product-cart-1.jpg"
                                                     alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                             </picture>
                                         </div>
@@ -100,7 +101,7 @@
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
                                             <picture class="d-block ">
-                                                <img class="img-fluid" src="./assets/images/products/product-cart-2.jpg"
+                                                <img class="img-fluid" src="./src/assets/images/products/product-cart-2.jpg"
                                                     alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                             </picture>
                                         </div>
@@ -193,7 +194,7 @@
                         <div
                             class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
                             <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
-                                style=" will-change: transform; background-image: url(./assets/images/banners/banner-1.jpg)">
+                                style=" will-change: transform; background-image: url(./src/assets/images/banners/banner-1.jpg)">
                             </div>
                         </div>
                         <div
@@ -212,7 +213,7 @@
                         <div
                             class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
                             <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
-                                style=" will-change: transform; background-image: url(./assets/images/banners/banner-2.jpg)">
+                                style=" will-change: transform; background-image: url(./src/assets/images/banners/banner-2.jpg)">
                             </div>
                         </div>
                         <div
@@ -231,7 +232,7 @@
                         <div
                             class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
                             <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
-                                style=" will-change: transform; background-image: url(./assets/images/banners/banner-4.jpg)">
+                                style=" will-change: transform; background-image: url(./src/assets/images/banners/banner-4.jpg)">
                             </div>
                         </div>
                         <div
@@ -250,7 +251,7 @@
                         <div
                             class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
                             <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
-                                style=" will-change: transform; background-image: url(./assets/images/banners/banner-3.jpg)">
+                                style=" will-change: transform; background-image: url(./src/assets/images/banners/banner-3.jpg)">
                             </div>
                         </div>
                         <div
@@ -311,7 +312,7 @@
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="000">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-7.jpg"
+                                    <img class="w-100" title="" src="./src/assets/images/categories/category-7.jpg"
                                         alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Imprescindibles</p>
@@ -322,7 +323,7 @@
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="100">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-2.jpg"
+                                    <img class="w-100" title="" src="./src/assets/images/categories/category-2.jpg"
                                         alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Selección curada</p>
@@ -333,7 +334,7 @@
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="200">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-3.jpg"
+                                    <img class="w-100" title="" src="./src/assets/images/categories/category-3.jpg"
                                         alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Básicos de Streetwear</p>
@@ -344,7 +345,7 @@
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="300">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-4.jpg"
+                                    <img class="w-100" title="" src="./src/assets/images/categories/category-4.jpg"
                                         alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Impermeable y ligero</p>
@@ -355,7 +356,7 @@
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="400">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-5.jpg"
+                                    <img class="w-100" title="" src="./src/assets/images/categories/category-5.jpg"
                                         alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Mantente abrigado</p>
@@ -366,7 +367,7 @@
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="500">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-6.jpg"
+                                    <img class="w-100" title="" src="./src/assets/images/categories/category-6.jpg"
                                         alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">20% Descuento</p>
@@ -377,7 +378,7 @@
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="600">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-1.jpg"
+                                    <img class="w-100" title="" src="./src/assets/images/categories/category-1.jpg"
                                         alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Recién llegados</p>
@@ -388,7 +389,7 @@
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="700">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-8.jpg"
+                                    <img class="w-100" title="" src="./src/assets/images/categories/category-8.jpg"
                                         alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Accesorios</p>
@@ -436,17 +437,17 @@
                 <div class="col-12 col-md-6 position-relative z-index-20 pe-0" data-aos="fade-left">
                     <picture
                         class="w-50 d-block position-relative z-index-10 border border-white border-4 shadow-lg">
-                        <img class="img-fluid" src="./assets/images/banners/banner-5.jpg"
+                        <img class="img-fluid" src="./src/assets/images/banners/banner-5.jpg"
                             alt="Plantilla HTML Bootstrap por Pixel Rocket">
                     </picture>
                     <picture
                         class="w-60 d-block me-8 mt-n10 shadow-lg border border-white border-4 position-relative z-index-20 ms-auto">
-                        <img class="img-fluid" src="./assets/images/banners/banner-6.jpg"
+                        <img class="img-fluid" src="./src/assets/images/banners/banner-6.jpg"
                             alt="Plantilla HTML Bootstrap por Pixel Rocket">
                     </picture>
                     <picture
                         class="w-50 d-block me-8 mt-n7 shadow-lg border border-white border-4 position-absolute top-0 end-0 z-index-0 ">
-                        <img class="img-fluid" src="./assets/images/banners/banner-7.jpg"
+                        <img class="img-fluid" src="./src/assets/images/banners/banner-7.jpg"
                             alt="Plantilla HTML Bootstrap por Pixel Rocket">
                     </picture>
                 </div>
@@ -455,7 +456,7 @@
                 <div class="row g-4">
                     <div class="col-12 col-xl-6 position-relative" data-aos="fade-right">
                         <picture class="position-relative z-index-10">
-                            <img class="w-100 rounded" src="./assets/images/banners/banner-sale.jpg"
+                            <img class="w-100 rounded" src="./src/assets/images/banners/banner-sale.jpg"
                                 alt="Plantilla HTML Bootstrap por Pixel Rocket">
                         </picture>
                         <div
@@ -474,7 +475,7 @@
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="./assets/images/banners/banner-8.jpg"
+                                        <img class="w-100 rounded" src="./src/assets/images/banners/banner-8.jpg"
                                             alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
@@ -486,7 +487,7 @@
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="./assets/images/banners/banner-9.jpg"
+                                        <img class="w-100 rounded" src="./src/assets/images/banners/banner-9.jpg"
                                             alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
@@ -498,7 +499,7 @@
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="./assets/images/banners/banner-10.jpg"
+                                        <img class="w-100 rounded" src="./src/assets/images/banners/banner-10.jpg"
                                             alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
@@ -510,7 +511,7 @@
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="./assets/images/banners/banner-11.jpg"
+                                        <img class="w-100 rounded" src="./src/assets/images/banners/banner-11.jpg"
                                             alt="Plantilla HTML Bootstrap por Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
@@ -648,7 +649,7 @@
                 </div>
             </div>
         </div>
-    </footer> <script src="./assets/js/vendor.bundle.js"></script>
+    </footer> <script src="./src/assets/js/vendor.bundle.js"></script>
 
     <!-- Custom JS -->
     <?php echo $varJs; ?>

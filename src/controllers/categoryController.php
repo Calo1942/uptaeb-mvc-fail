@@ -1,13 +1,26 @@
 <?php
 
-    if (file_exists("models/categoryModel.php")) {
-        require_once("models/categoryModel.php");
-    } else {
-        die("<script>window.location='?url=index';</script>");
+namespace BruzDeporte\UptaebMvc\Controllers;
+
+class CategoryController {
+    private $basePath;
+
+    public function __construct() {
+        $this->basePath = __DIR__ . '/../';
     }
 
-    if (file_exists("views/category.php")) {
-        require_once("views/category.php");
-    } else {
-        die("<script>window.location='?url=category';</script>");
+    public function index() {
+        $modelPath = $this->basePath . 'models/categoryModel.php';
+        $viewPath = $this->basePath . 'views/category.php';
+
+        if (file_exists($modelPath)) {
+            require_once($modelPath);
+        }
+
+        if (file_exists($viewPath)) {
+            require_once($viewPath);
+        } else {
+            die("<script>window.location='?url=index';</script>");
+        }
     }
+}
